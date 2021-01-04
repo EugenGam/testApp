@@ -1,0 +1,65 @@
+.photopage__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.photopage__img {
+  width: 100%;
+  height: auto;
+}
+
+.photopage__list {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  :last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.photopage__item {
+  display: block;
+  min-height: 30px;
+  padding-left: 20px;
+  color: #333333;
+  font-size: 20px;
+  font-family: "Gill Sans";
+  background-position-x: left;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  padding-top: 3px;
+  margin-bottom: 10px;
+}
+
+.author {
+  background-image: url("../../assets/icons/camera.svg");
+}
+
+.likes {
+  background-image: url("../../assets/icons/heart.svg");
+}
+.downloads {
+  background-image: url("../../assets/icons/download.svg");
+}
+.views {
+  background-image: url("../../assets/icons/view.svg");
+}
+
+@media screen and (min-width: 768px) {
+  .photopage__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  .photopage__item {
+    margin-bottom: 0px;
+  }
+}
